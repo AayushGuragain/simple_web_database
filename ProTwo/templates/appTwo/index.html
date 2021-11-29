@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container jumbotron">
+    <h1>Working!</h1>
+    <h2>Go to /users to see the user list!</h2>
+    <p>This <a href="http://127.0.0.1:8000/users/">Link</a> might take you to /users.</p>
+    <h2>Go to /static/images/myphoto.jpg to see my picture enlarged or simply click it.</h2>
+    <a href="{% static "images/myphoto.jpg" %}"><img src="{% static "images/myphoto.jpg" %}" alt="My pic was here."></a>
+    </div>
+  </body>
+</html>
