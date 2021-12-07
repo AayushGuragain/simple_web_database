@@ -1,0 +1,317 @@
+body{
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #F0F8FF;
+}
+title{
+	font-family: 'Exo', sans-serif;
+}
+
+.row{
+	width:60%;
+	margin:auto;
+	 overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.botton{
+	height: 38px;
+	background:#FF7F50;
+	border:0;
+	padding-left:20px;
+	padding-right: 20px;
+	color: white;
+	font-size: 15px;
+}
+
+.colorbackground{
+	padding:15px;
+	background:#C0C0C0;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#align{
+	text-align: center;
+}
+
+header{
+	background:#FF7F50;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #E8491D 3px solid;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	margin: 0;
+	font-weight: bold;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+
+}
+
+header .current a{
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #F0F8FF;
+	font-weight: bold;
+}
+
+
+/* #body{
+	min-height: 400px;
+	background:url('images/i11.jpg') no-repeat ;
+	background-size: cover;
+	text-align: center;
+	color: white;
+} */
+
+#body h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	font-family: 'Dancing Script', cursive;
+}
+
+#body p{
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+}
+
+#zip{
+	padding: 15px;
+	color: black;
+}
+
+#zip h1{
+	font-family:'Exo', cursive;
+	float: center;
+
+}
+
+#zip form{
+	float: center;
+	margin-top: 15px;
+
+}
+
+#zip input[type="zipcode"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+#LastPortion{
+	margin-top: 20px;
+	font-family: 'Exo', sans-serif;
+
+}
+
+#LastPortion .Portion{
+	float: left;
+	width: 30%;
+	padding:10px;
+}
+
+
+
+#LastPortion .Portion img{
+	width: 90px;
+}
+
+aside#side{
+	float: left;
+	width: 20%;
+	margin-top: 5px;
+}
+
+aside#side .text{
+	margin-bottom: 10px;
+	margin-left:800px;
+	margin-right: 50px;
+}
+aside#side2{
+	float: right;
+	width: 20%;
+	margin-top: 5px;
+}
+
+aside#side2 .text{
+	margin-bottom: 10px;
+	margin-right:800px;
+	margin-left: 50px;
+}
+article#About-Portion{
+
+	width: 95%;
+	padding:20px;
+	border: #cccccc solid 1px;
+	margin-left:25px;
+	margin-right:25px;
+	margin-bottom: 10px;
+	background: #e6e6e6;
+}
+
+
+/*REgister*/
+section#LastRegister{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/i10.jpeg) no-repeat 0;
+	height: 100vh;
+	min-height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.container-register{
+	width: 400px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+
+.one{
+	padding-top: 31px;
+	padding-bottom: 31px;
+	background-color: none;
+}
+
+#register-Portion{
+	position: relative;
+	z-index: 1;
+	background: rgba(7, 40, 195, 0.8);
+	max-width: 360px;
+	margin:0;
+	padding: 45px;
+	text-align: center;
+	border-radius: 3px;
+}
+
+#register-Portion input{
+	font-family: "Roboto", sans-serif;
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%;
+	border:0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+#register-Portion button{
+	font-family: "Robonto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background:#e8491d;
+	width: 100%;
+	border:0;
+	padding:15px;
+	color:white;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#register-Portion button:hover, #register-Portion button:active{
+	background: #FFA500;
+}
+
+#register-Portion .message{
+	margin: 15px;
+	color: aliceblue;
+	font-size: 12px;
+}
+
+#register-Portion .message a{
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+#register-Portion .register{
+	display: none;
+}
+
+/*Donate Page*/
+section#LastDonate{
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/i15.jpg) no-repeat 0;
+	height: 100%;
+	min-height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color:#e8491d;
+	text-align: center;
+}
+
+figure {
+   margin: 1em;
+   padding: 1em;
+   background-color: orange;
+   width: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+
+}
+
+
+figcaption {
+   margin-top: 0.75em;
+   font-weight: bold;
+   font-size: 1em;
+}
+
+figure:hover {
+   background-color: #263238;
+   color: white;
+   box-shadow: 10px 10px 32px -4px rgba(0,0,0,0.75);
+   transform: scale(1.15);
+}
+.column {
+  float: left;
+  width: 20%;
+  margin: 20px;
+  padding: 5px;
+}
+.row_image {
+	width:100%;
+	margin:auto;
+	overflow: hidden;
+}

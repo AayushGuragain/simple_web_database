@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Index</title>
-    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="container jumbotron">
-    <h1>Working!</h1>
-    <h2>Go to /users to see the user list!</h2>
-    <p>This <a href="http://127.0.0.1:8000/users/">Link</a> might take you to /users.</p>
-    <h2>Go to /static/images/myphoto.jpg to see my picture enlarged or simply click it.</h2>
-    <a href="{% static "images/myphoto.jpg" %}"><img src="{% static "images/myphoto.jpg" %}" alt="My pic was here."></a>
-    </div>
-  </body>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Exo|Pacifico|Srisakdi" rel="stylesheet">
+
+	<title>Home&Heaven</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/small_screen.css" %}"
+         media="screen and (max-width:480px)" />
+   <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"
+         media="screen and (min-width:481px)" />
+   <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<script type="text/javascript" src="{% static "js/script.js" %}"></script>
+</head>
+<body>
+	<script src="{% static "js/script.js" %}"></script>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1> HOME AND HEAVEN</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="#">home</a></li>
+					<li><a href="#">about</a></li>
+					<li><a href="#">shop</a></li>
+					<li><a href="#">donate</a></li>
+					<li><a href="http://127.0.0.1:8000/users/">customers</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="body" style="background-image: url({% static 'images/i11.jpg'%});">
+		<div class="container">
+			<h1>We care for you.</h1>
+			<p>Customer page leads to the django database.</p>
+		</div>
+	</section>
+
+	<section id="zip">
+		<div class="container">
+			<h1>Nearest Home&Heaven Store</h1>
+			<form name="myForm" action="js/script2.php" onsubmit="return validateForm()" method="post">
+				<input type="number" placeholder="Search using ZipCode" name="zipcode">
+				<button type="submit" class="botton">Search</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="LastPortion">
+		<div class="container">
+			<div class="Portion">
+				<img src="{% static "images/CALL.png" %}">
+				<h3>Contact Us</h3>
+			</div>
+			<div class="Portion">
+				<img src="{% static "images/MONEY.png" %}">
+				<h3>Negotiate Finances</h3>
+			</div>
+			<div class="Portion">
+				<img src="{% static "images/HOME.png" %}">
+				<h3>We will setup your home!</h3>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Home&Heaven, Copyright &copy; 2019</p>
+	</footer>
+</body>
 </html>
